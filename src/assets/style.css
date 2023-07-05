@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+h1 {
+    text-align: center;
+    color: #5333ED;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pagination {
+    margin-top: 1rem;
+}
+
+.page-links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.page-links li {
+    cursor: pointer;
+    margin-right: 5px;
+    padding: 5px 10px;
+    background-color: #5333ED;
+    color: #ffffff;
+}
+
+.page-links li.active {
+    background-color: #846cff;
+}
+
+
+
+.user-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: center;
+
+}
+
+.user-card {
+    display: flex;
+    margin: 40px 10px 40px 10px;
+    box-sizing: border-box;
+    flex-basis: calc(30% - 20px);
+    text-align: center;
+    background-color: #EEEBFD;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    /* max-width: fit-content; */
+
+
+
+
+}
+
+.user-card .text-wrapper {
+    overflow: hidden;
+    max-height: 100px;
+}
+
+
+
+.user-card li,
+.user-card a {
+
+    margin-bottom: 20px;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    flex-wrap: wrap;
+    max-width: fit-content;
+    max-width: 100%;
+}
+
+.user-card a:hover {
+    color: #5333ED
+}
+
+
+
+
+.user-card img {
+    align-self: flex-end;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 0 10px #ffffff;
+    position: relative;
+    bottom: 30px;
+    flex-shrink: 0;
+
+}
+
+
+.bold-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.mail-icon {
+    margin-right: .6em;
+    color: #5333ED;
+}
+
+
+@media (max-width: 770px) {
+    .user-card {
+        flex-basis: 100%;
+        max-width: 100%;
+        max-width: calc(50% - 20px);
+    }
+
+    .user-card img {
+        width: 100px;
+        height: 100px;
+
+    }
+}
+
+@media (max-width: 460px) {
+    .user-card {
+        flex-basis: 100%;
+        max-width: 100%;
+
+    }
+}
